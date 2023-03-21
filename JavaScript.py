@@ -54,4 +54,7 @@ element= browser.find_element(By.XPATH,"//h2[normalize-space()='Bestsellers in O
 
 browser.execute_script("arguments[0].scrollIntoView(true);", element)
 
+print(browser.execute_script("return navigator.userAgent;"))  # how to get user agent
+
+
 time.sleep(5)
