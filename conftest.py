@@ -1,7 +1,7 @@
 import pytest
 
 
-@pytest.fixture
+@pytest.fixture(autouse=True)
 def tc_setup():
     print("Launch Browser")
     print("Login")
